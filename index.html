@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>PLC Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>PLC Simulator</h1>
+
+  <div class="controls">
+   <button id="startBtn">Start</button>
+   <button id="stopBtn">Stop</button>
+   <button id="emergencyBtn">非常停止</button>
+   <button id="resetBtn">Reset</button>
+  </div>
+
+  <p id="status">状態：IDLE</p>
+  <p id="sensor1">S1: OFF</p>
+  <p id="sensor2">S2: OFF</p>
+
+  <!-- コンベア領域 -->
+  <div id="conveyor">
+    <div id="box"></div>
+  </div>
+
+  <h2>ログ</h2>
+  <div id="log"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
