@@ -30,16 +30,13 @@ index.html をブラウザで開いてください。
 
 ## 状態遷移
 
+```text
 IDLE
- ↓ Start
-RUNNING
- ↓ Timeout
-ERROR
- ↓ Reset
-IDLE
-
-RUNNING
- ↓ Emergency
-EMERGENCY
- ↓ Reset
-IDLE
+ └─ Start → RUNNING
+              ├─ Timeout → ERROR
+              │            └─ Reset → IDLE
+              ├─ Stop → STOP
+              │         └─ Start → RUNNING
+              └─ Emergency → EMERGENCY
+                           └─ Reset → IDLE
+```
