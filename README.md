@@ -40,3 +40,9 @@ IDLE
               └─ Emergency → EMERGENCY
                            └─ Reset → IDLE
 ```
+
+## 画面イメージ
+
+![RUNNING](images/1_running.png)
+![ERROR](images/2_error.png)
+![LOG](images/3_log.png)
